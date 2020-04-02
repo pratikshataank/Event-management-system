@@ -1,0 +1,140 @@
+﻿
+@{
+    ViewBag.Title = "Gallary Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="~/Content/Gallery.css">
+
+</head>
+
+<body>
+    <div class="container gallery-container">
+        <h1>Photo Gallery</h1>
+
+        <!--First row-->
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <a href="@Url.Action( "Weeding", "Home")">
+                    <img src="~/Content/Images/Galleryimage/g1.jpg" alt="Bridge" class="img-responsive">
+                </a>
+
+                <div class="carousel-caption">
+                    <h1>Wedding Pictures</h1>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <a href="@Url.Action( "Birthday", "Home")">
+                    <img src="~/Content/Images/Galleryimage/b2.jpg" alt="Bridge" class="img-responsive">
+                </a>
+
+                <div class="carousel-caption">
+                    <h1>Birthday Parties</h1>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <a href="@Url.Action( "sports", "Home")">
+                    <img src="~/Content/Images/Galleryimage/s1.jpg" alt="Bridge" class="img-responsive">
+                </a>
+
+                <div class="carousel-caption">
+                    <h1>Sports Events</h1>
+                </div>
+            </div>
+        </div><br /><br />
+
+        <!--Second row-->
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <a href="@Url.Action( "Engagement", "Home")">
+                    <img src="~/Content/Images/Galleryimage/e1.jpg" alt="Bridge" class="img-responsive">
+                </a>
+
+                <div class="carousel-caption">
+                    <h1>Engagement</h1>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <a href="@Url.Action( "Cradle", "Home")">
+                    <img src="~/Content/Images/Galleryimage/c1.jpg" alt="Bridge" class="img-responsive">
+                </a>
+
+                <div class="carousel-caption">
+                    <h1>Cradle Ceremony</h1>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <a href="@Url.Action( "Anniversary", "Home")">
+                    <img src="~/Content/Images/Galleryimage/a1.jpg" alt="Bridge" class="img-responsive">
+                </a>
+
+                <div class="carousel-caption">
+                    <h1>Anniversary</h1>
+                </div>
+            </div>
+        </div><br /><br />
+
+        <!--Third row-->
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <a href="@Url.Action( "Gallery", "Home")">
+                    <img src="~/Content/Images/Galleryimage/bs1.jpg" alt="Bridge" class="img-responsive">
+                </a>
+
+                <div class="carousel-caption">
+                    <h1>Baby Shower</h1>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <a href="@Url.Action( "Gallery", "Home")">
+                    <img src="~/Content/Images/Galleryimage/ee1.jpg" alt="Bridge" class="img-responsive">
+                </a>
+
+                <div class="carousel-caption">
+                    <h1>Educational Events</h1>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <a href="@Url.Action( "Gallery", "Home")">
+                    <img src="~/Content/Images/Galleryimage/ce1.jpg" alt="Bridge" class="img-responsive">
+                </a>
+
+                <div class="carousel-caption">
+                    <h1>Corporate Events</h1>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</body>
+</html>
